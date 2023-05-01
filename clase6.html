@@ -26,6 +26,8 @@
         .cardsContainer {
             display: grid;
             grid-template-columns: repeat(auto-fill, 240px);
+            gap: 28px;
+            place-content: center;
         }
         .productCard {
             width: 240px;
@@ -40,10 +42,40 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
+            margin-top: 12px;
+        }
+        .productInfo figure {
+            margin: 0px;
+            width: 36px;
+            height: 36px;
         }
         .productInfo figure img {
             width: 36px;
             height: 36px;
+        }
+        .productInfo div p:nth-child(1){
+            font-weight: bold;
+            font-size: var(--md);
+            margin-top: 0px;
+            margin-bottom: 4px;
+        }
+        .productInfo div p:nth-child(2){
+            font-size: var(--sm);
+            margin-top: 0px;
+            margin-bottom: 0px;
+            color: var(--very-light-pink);
+        }
+        @media (max-width: 640px) {
+            .cardsContainer {
+                grid-template-columns: repeat(auto-fill, 140px);
+            }
+            .productCard {
+                width: 140px;
+            }
+            .productCard img {
+                width: 140px;
+                height: 140px;
+            }
         }
     </style>
 </head>
