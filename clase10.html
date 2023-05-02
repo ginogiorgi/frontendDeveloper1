@@ -44,13 +44,10 @@
         }
         .order {
             display: grid;
-            grid-template-columns: auto 1fr;
+            grid-template-columns: auto 1fr auto;
             gap: 16px;
             align-items: center;
-            background-color: var(--text-input-field);
-            border-radius: 8px;
-            margin-bottom: 24px;
-            padding: 0 24px 0 24px;
+            margin-bottom: 12px;
         }
         .order p:nth-child(1) {
             display: flex;
@@ -68,35 +65,12 @@
             text-align: end;
             font-weight: bold;
         }
-        .shoppingCart {
-            display: grid;
-            grid-template-columns: auto 1fr auto auto;
-            gap: 16px;
-            margin-bottom: 24px;
-            align-items: center;
-        }
-        .shoppingCart figure {
-            margin: 0px;
-        }
-        .shoppingCart figure img {
-            width: 72px;
-            height: 72px;
-            border-radius: 20px;
-            object-fit: cover;
-        }
-        .shoppingCart p:nth-child(2) {
-            color: var(--very-light-pink);
-        }
-        .shoppingCart p:nth-child(3) {
-            font-size: var(--md);
-            font-weight: bold;
-        }
     </style>
 </head>
 <body>
     <div class="myOrder">
         <div class="myOrderContainer">
-            <h1 class="title">My order</h1>
+            <h1 class="title">My orders</h1>
             <div class="myOrderContent">
                 <div class="order">
                     <p>
@@ -104,28 +78,39 @@
                         <span>3 articles</span>
                     </p>
                     <p>$120.00</p>
+                    <img src="./icons/flechita.svg" alt="arrow">
                 </div>
-
-                <div class="shoppingCart">
-                    <figure>
-                        <img src="https://images.pexels.com/photos/100582/pexels-photo-100582.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Bike">
-                    </figure>
-                    <p>Bike</p>
-                    <p>$30.00</p>
+                <div class="order">
+                    <p>
+                        <span>03.25.21</span>
+                        <span>3 articles</span>
+                    </p>
+                    <p>$120.00</p>
+                    <img src="./icons/flechita.svg" alt="arrow">
                 </div>
-                <div class="shoppingCart">
-                    <figure>
-                        <img src="https://images.pexels.com/photos/100582/pexels-photo-100582.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Bike">
-                    </figure>
-                    <p>Bike</p>
-                    <p>$30.00</p>
+                <div class="order">
+                    <p>
+                        <span>03.25.21</span>
+                        <span>3 articles</span>
+                    </p>
+                    <p>$120.00</p>
+                    <img src="./icons/flechita.svg" alt="arrow">
                 </div>
-                <div class="shoppingCart">
-                    <figure>
-                        <img src="https://images.pexels.com/photos/100582/pexels-photo-100582.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Bike">
-                    </figure>
-                    <p>Bike</p>
-                    <p>$30.00</p>
+                <div class="order">
+                    <p>
+                        <span>03.25.21</span>
+                        <span>3 articles</span>
+                    </p>
+                    <p>$120.00</p>
+                    <img src="./icons/flechita.svg" alt="arrow">
+                </div>
+                <div class="order">
+                    <p>
+                        <span>03.25.21</span>
+                        <span>3 articles</span>
+                    </p>
+                    <p>$120.00</p>
+                    <img src="./icons/flechita.svg" alt="arrow">
                 </div>
             </div>
         </div>
