@@ -24,7 +24,33 @@
             font-family: 'Quicksand', sans-serif;
         }
         .mobileMenu {
-            
+            padding: 24px;
+        }
+        .mobileMenu ul {
+            padding: 0px;
+            list-style: none;
+        }
+        .mobileMenu ul:nth-child(1) {
+            border-bottom: 1px solid var(--very-light-pink);
+        }
+        .mobileMenu ul:nth-child(3) {
+            position: absolute;
+            bottom: 0px;
+        }
+        .mobileMenu a {
+            text-decoration: none;
+            color: var(--black);
+            font-weight: bold;
+        }
+        .mobileMenu ul li {
+            margin-bottom: 24px;
+        }
+        .mobileMenu .email {
+            font-size: var(--sm);
+            font-weight: 300;
+        }
+        .mobileMenu .signOut {
+            color: var(--hospital-green);
         }
     </style>
 </head>
@@ -65,10 +91,10 @@
 
         <ul>
             <li>
-                <a href="/">ginorubengiorgi@gmail.com</a>
+                <a href="/" class="email">ginorubengiorgi@gmail.com</a>
             </li>
             <li>
-                <a href="/">Sign out</a>
+                <a href="/" class="signOut">Sign out</a>
             </li>
         </ul>
     </div>
